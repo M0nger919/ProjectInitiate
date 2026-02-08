@@ -1,0 +1,33 @@
+# Example Skill Configuration
+
+# This is a placeholder example for a chat skill configuration file
+# Replace this with your actual skill configuration
+
+skill:
+  name: "example-message-parser"
+  description: "Parses and extracts information from chat messages"
+  version: "1.0.0"
+  
+  # Skill type
+  type: "message_processing"
+  
+  # Input/Output specification
+  input:
+    type: "string"
+    description: "Raw message text"
+  
+  output:
+    type: "object"
+    schema:
+      intent: "string"
+      entities: "array"
+      sentiment: "string"
+  
+  # Configuration options
+  options:
+    enable_entity_extraction: true
+    enable_sentiment_analysis: true
+    supported_languages:
+      - "en"
+      - "es"
+      - "fr"

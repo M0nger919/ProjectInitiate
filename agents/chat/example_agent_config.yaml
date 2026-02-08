@@ -1,0 +1,29 @@
+# Example Agent Configuration
+
+# This is a placeholder example for a chat agent configuration file
+# Replace this with your actual agent configuration
+
+agent:
+  name: "example-chat-agent"
+  description: "An example chat agent for demonstration"
+  version: "1.0.0"
+  
+  # Model configuration
+  model:
+    provider: "openai"  # or "anthropic", "azure", etc.
+    model_name: "gpt-4"
+    temperature: 0.7
+    max_tokens: 2000
+  
+  # Skills this agent can use
+  skills:
+    - "message_parser"
+    - "response_formatter"
+    - "context_manager"
+  
+  # Agent behavior settings
+  settings:
+    max_conversation_turns: 50
+    context_window_size: 10
+    enable_memory: true
+    enable_logging: true
